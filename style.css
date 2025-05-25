@@ -1,1 +1,205 @@
-/* Add you CSS here */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0e2d1f;
+  color: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0e2d1f;
+}
+
+/* Navigation */
+.navbar {
+  background: none;
+  padding: 2rem;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Times New Roman", serif;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links li a {
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #d8f6eb;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.3s;
+  font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+/* Content Container */
+.profile-container {
+  max-width: 1000px;
+  margin: 5vh auto;
+  padding: 2rem;
+}
+
+/* Typography */
+h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 4rem;
+  color: #e4f8ec;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #bfe5d0;
+}
+
+.minors {
+  font-size: 1.1rem;
+  color: #a7d5c1;
+  margin-top: 0.5rem;
+}
+
+/* Bio Section */
+.bio {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Card Row */
+.card-row {
+  display: flex;
+  gap: 2rem;
+  margin: 4rem 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background-color: #163a2b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #d8f6eb;
+}
+
+.card p {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #eef8f4;
+}
+
+/* Tree Species Section */
+.trees {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #1c4834;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trees h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #c8f4e2;
+}
+
+.trees ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  color: #f0fdf9;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #b9e4ce;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .card-row {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* Common styles for scroll targets */
+section[id] {
+  scroll-margin-top: 50vh; /* Centers section roughly in view */
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
